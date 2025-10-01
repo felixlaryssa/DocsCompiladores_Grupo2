@@ -36,7 +36,7 @@ A princípio, para informações sobre como rodar o projeto e utilizar o compila
 
 | Versão |Descrição     |Autor                                       |Data    |Revisor|
 |:-:     | :-:          | :-:                                        | :-:        |:-:|
-|1.0     | Criação da documento | [Caio Duarte](https://github.com/caioduart3)   | 02/05/2025 | [Laryssa Felix](https://github.com/felixlaryssa)|
+|1.0     | Criação da documento | [Caio Duarte](https://github.com/caioduart3)   | 01/10/2025 | [Laryssa Felix](https://github.com/felixlaryssa)|
 
 <font size="2">
   <p style="text-align: center">

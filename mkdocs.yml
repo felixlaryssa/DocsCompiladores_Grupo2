@@ -45,6 +45,7 @@ theme:
 nav:
   - Apresentação: index.md
   - Escopo: Escopo/escopo.md
+  - Metodologia: Metodologia/metodologia.md
   - Dificuldades: Dificuldades/dificuldades.md
   - Desenvolvimento Técnico:
     - Parser: Desenvolvimento_tecnico/parser.md
