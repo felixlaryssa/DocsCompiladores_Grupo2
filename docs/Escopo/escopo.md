@@ -12,14 +12,13 @@ O compilador oferece suporte aos seguintes tipos de dados:
 * double;
 * char;
 * string;
-* boolean.
 
 ## Operações e Expressões
 As operações implementadas incluem:
 
 * **Operações aritméticas básicas:** adição (+), subtração (-), multiplicação (*), divisão (/) e módulo (%)
 
-* **Operadores relacionais:** ==, !=, <, <=, >, >=
+* **Operadores relacionais(de comparação):** ==, !=, <, <=, >, >=
 
 * **Operadores lógicos:** and, or, not (traduzidos para &&, || e ! em C)
 
@@ -43,26 +42,54 @@ Por fim, também está incluído no escopo o suporte à definição e chamada de
 <br>
 
 -------
-## Escopo do Primeiro Ponto de Controle
+# Escopo do Primeiro Ponto de Controle
 
+ Neste primeiro ponto de controle do projeto, já foi possível implementar parte significativa das funcionalidades previstas para o compilador. A seguir, descrevemos o que foi concluído até o momento, separando os avanços alcançados no **analisador léxico** e no **analisador sintático**.
 
+### Léxico
+A etapa léxica está completa, sendo capaz de reconhecer:
 
+- Variáveis
+- Estruturas condicionais
+- Laços de repetição
+- Tipos de dados
 
-implementar no sintatico
-- Condicionais (if, elif, else)
-- Laços (while, for)
+Além disso, o léxico já trata mensagens de erro e contempla casos de teste específicos.
+
+### Sintático
+No analisador sintático, já foram definidas as regras para:
+
+- Expressões matemáticas
+- Atribuição de variáveis
+- Chamadas de funções
+- Início da estrutura de indentação
+
+Também foram incorporadas regras para mensagens de erro e casos de teste.
+
+### Pendências
+Ainda falta implementar no sintático:
+
+- Condicionais: `if`, `elif`, `else`
+- Laços: `while`, `for`
 - Definição de funções
 - Declaração e uso de listas
-- Dicionários
+- Declaração e uso de dicionários
 
-- Condicionais (if, elif, else)
-- Laços (while, for)
-- Definição de funções
-- Declaração e uso de listas
+Além disso, é necessário adicionar mais regras e estruturar corretamente a indentação para permitir a implementação completa de laços e condicionais.
 
-falta adicionar mais regras e estruturar a indentação pra implementar laços e condicionais
+## Histórico de Versões 
+<p style="text-align: center; font-size: 14px;">
+Tabela 1: Histórico de versões
+</p>
 
-- Léxico (completo, reconhecendo variáveis, condicionais, loops, tipos, etc. )
-- Sintático (parcialmente, ...)
+| Versão | Descrição | Autor | Data | Revisor |
+|:-:     | :-:       | :-:   | :-:  | :-:     |
+| 1.0    | Criação do documento | [Laryssa Felix](https://github.com/felixlaryssa) | 01/10/2025 | [Caio Duarte](https://github.com/caioduart3) |
 
-regras de expressões matemáticas, atribuição de variáveis, chamada de funções e início de estrutura de indentação e de mensagens de erro
+<p style="text-align: center; font-size: 10px; margin-top: 0;">
+Fonte: <a href="https://github.com/caioduart3">Caio Duarte</a>, 
+<a href="https://github.com/ludmilaaysha">Ludmila Aysha</a>, 
+<a href="https://github.com/RafaelSchadt">Rafael Welz</a>, 
+<a href="https://github.com/isaqzin">Isaque Camargos</a>, 
+<a href="https://github.com/felixlaryssa">Laryssa Felix</a>, 2025.
+</p>
