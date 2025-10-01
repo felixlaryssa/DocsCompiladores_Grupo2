@@ -14,7 +14,7 @@
         <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../../Dificuldades/dificuldades/">
+        <link rel="next" href="../../Metodologia/metodologia/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -261,6 +261,23 @@
   
   
     <li class="md-tabs__item">
+      <a href="../../Metodologia/metodologia/" class="md-tabs__link">
+        
+  
+    
+  
+  Metodologia
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
       <a href="../../Dificuldades/dificuldades/" class="md-tabs__link">
         
   
@@ -270,6 +287,24 @@
 
       </a>
     </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Desenvolvimento_tecnico/parser/" class="md-tabs__link">
+          
+  
+  Desenvolvimento Técnico
+
+        </a>
+      </li>
+    
   
 
       
@@ -435,19 +470,30 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#escopo-do-primeiro-ponto-de-controle" class="md-nav__link">
-    <span class="md-ellipsis">
-      Escopo do Primeiro Ponto de Controle
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Metodologia/metodologia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metodologia
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -468,6 +514,72 @@
   
 
       </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Desenvolvimento Técnico
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Desenvolvimento Técnico
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Desenvolvimento_tecnico/parser/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -543,15 +655,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#escopo-do-primeiro-ponto-de-controle" class="md-nav__link">
-    <span class="md-ellipsis">
-      Escopo do Primeiro Ponto de Controle
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -580,7 +683,6 @@
 <li>double;</li>
 <li>char;</li>
 <li>string;</li>
-<li>boolean.</li>
 </ul>
 <h2 id="operacoes-e-expressoes">Operações e Expressões</h2>
 <p>As operações implementadas incluem:</p>
@@ -589,7 +691,7 @@
 <p><strong>Operações aritméticas básicas:</strong> adição (+), subtração (-), multiplicação (*), divisão (/) e módulo (%)</p>
 </li>
 <li>
-<p><strong>Operadores relacionais:</strong> ==, !=, &lt;, &lt;=, &gt;, &gt;=</p>
+<p><strong>Operadores relacionais(de comparação):</strong> ==, !=, &lt;, &lt;=, &gt;, &gt;=</p>
 </li>
 <li>
 <p><strong>Operadores lógicos:</strong> and, or, not (traduzidos para &amp;&amp;, || e ! em C)</p>
@@ -613,25 +715,68 @@
 <p>Por fim, também está incluído no escopo o suporte à definição e chamada de funções, permitindo reutilização de trechos lógicos.</p>
 <p><br></p>
 <hr />
-<h2 id="escopo-do-primeiro-ponto-de-controle">Escopo do Primeiro Ponto de Controle</h2>
-<p>implementar no sintatico
-- Condicionais (if, elif, else)
-- Laços (while, for)
-- Definição de funções
-- Declaração e uso de listas
-- Dicionários</p>
+<h1 id="escopo-do-primeiro-ponto-de-controle">Escopo do Primeiro Ponto de Controle</h1>
+<p>Neste primeiro ponto de controle do projeto, já foi possível implementar parte significativa das funcionalidades previstas para o compilador. A seguir, descrevemos o que foi concluído até o momento, separando os avanços alcançados no <strong>analisador léxico</strong> e no <strong>analisador sintático</strong>.</p>
+<h3 id="lexico">Léxico</h3>
+<p>A etapa léxica está completa, sendo capaz de reconhecer:</p>
 <ul>
-<li>Condicionais (if, elif, else)</li>
-<li>Laços (while, for)</li>
+<li>Variáveis</li>
+<li>Estruturas condicionais</li>
+<li>Laços de repetição</li>
+<li>Tipos de dados</li>
+</ul>
+<p>Além disso, o léxico já trata mensagens de erro e contempla casos de teste específicos.</p>
+<h3 id="sintatico">Sintático</h3>
+<p>No analisador sintático, já foram definidas as regras para:</p>
+<ul>
+<li>Expressões matemáticas</li>
+<li>Atribuição de variáveis</li>
+<li>Chamadas de funções</li>
+<li>Início da estrutura de indentação</li>
+</ul>
+<p>Também foram incorporadas regras para mensagens de erro e casos de teste.</p>
+<h3 id="pendencias">Pendências</h3>
+<p>Ainda falta implementar no sintático:</p>
+<ul>
+<li>Condicionais: <code>if</code>, <code>elif</code>, <code>else</code></li>
+<li>Laços: <code>while</code>, <code>for</code></li>
 <li>Definição de funções</li>
 <li>Declaração e uso de listas</li>
+<li>Declaração e uso de dicionários</li>
 </ul>
-<p>falta adicionar mais regras e estruturar a indentação pra implementar laços e condicionais</p>
-<ul>
-<li>Léxico (completo, reconhecendo variáveis, condicionais, loops, tipos, etc. )</li>
-<li>Sintático (parcialmente, ...)</li>
-</ul>
-<p>regras de expressões matemáticas, atribuição de variáveis, chamada de funções e início de estrutura de indentação e de mensagens de erro</p>
+<p>Além disso, é necessário adicionar mais regras e estruturar corretamente a indentação para permitir a implementação completa de laços e condicionais.</p>
+<h2 id="historico-de-versoes">Histórico de Versões</h2>
+<p style="text-align: center; font-size: 14px;">
+Tabela 1: Histórico de versões
+</p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Versão</th>
+<th style="text-align: center;">Descrição</th>
+<th style="text-align: center;">Autor</th>
+<th style="text-align: center;">Data</th>
+<th style="text-align: center;">Revisor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">Criação do documento</td>
+<td style="text-align: center;"><a href="https://github.com/felixlaryssa">Laryssa Felix</a></td>
+<td style="text-align: center;">01/10/2025</td>
+<td style="text-align: center;"><a href="https://github.com/caioduart3">Caio Duarte</a></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center; font-size: 10px; margin-top: 0;">
+Fonte: <a href="https://github.com/caioduart3">Caio Duarte</a>, 
+<a href="https://github.com/ludmilaaysha">Ludmila Aysha</a>, 
+<a href="https://github.com/RafaelSchadt">Rafael Welz</a>, 
+<a href="https://github.com/isaqzin">Isaque Camargos</a>, 
+<a href="https://github.com/felixlaryssa">Laryssa Felix</a>, 2025.
+</p>
 
 
 
