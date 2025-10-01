@@ -1,67 +1,50 @@
-# G2_compiladores
+
+# Apresentação do projeto
+
+<div style="text-align: justify;">
+<p>
+Projeto de uma compilador python para C elaborado como parte da disciplina "Compiladores", ministrada pelo professor Sergio Freitas. O sistema é desenvolvido pela equipe Runtime Terrors e que tem como objetivo criar um commpilador utilizando as ferramentas Flex e Bison.
+</p>
+</div>
+
+# Como utilizar o compilador?
+
+<div style="text-align: justify;">
+<p>
+A princípio, para informações sobre como rodar o projeto e utilizar o compilador, utilize as instruções descritas no <a href="https://github.com/CaioDuart3/G2_compiladore">README.md</a> do repositório.
+</p>
+
+</div>
+
+## Integrantes
+
+<table>
+
+<tr>
+   <td align="center"><a href="https://github.com/caioduart3"><img style="border-radius: 60%;" src="https://avatars.githubusercontent.com/u/134105981?v=4" width="200px;" alt=""/><br /><sub><b>Caio Duarte</b></sub></a><br />
+    <td align="center"><a href="https://github.com/ludmilaaysha"><img style="border-radius: 60%;" src="https://avatars.githubusercontent.com/u/91512745?v=4" width="200px;" alt=""/><br /><sub><b>Ludmila Aysha</b></sub></a><br />
+    <td align="center"><a href="https://github.com/RafaelSchadt"><img style="border-radius: 60%;" src="https://avatars.githubusercontent.com/u/179030119?" width="200px;" alt=""/><br /><sub><b>Rafael Welz</b></sub></a><br />
+    <td align="center"><a href="https://github.com/isaqzin"><img style="border-radius: 60%;" src="https://avatars.githubusercontent.com/u/145882190?v=4" width="200px;" alt=""/><br /><sub><b>Isaque Camargos</b></sub></a><br />
+    <td align="center"><a href="https://github.com/felixlaryssa"><img style="border-radius: 60%;" src="https://avatars.githubusercontent.com/u/143897458?v=4" width="200px;" alt=""/><br /><sub><b>Laryssa Felix</b></sub></a><br />
+</tr>
+
+</table>
 
 
-  ![Untitled design](https://github.com/user-attachments/assets/d3f39c04-847b-4bb3-9bb6-db7d11f84ba4)
+## Histórico de Versões 
+<font size="3"><p style="text-align: center">Tabela 1: Histórico de versões</p></font>
 
+| Versão |Descrição     |Autor                                       |Data    |Revisor|
+|:-:     | :-:          | :-:                                        | :-:        |:-:|
+|1.0     | Criação da documento | [Caio Duarte](https://github.com/caioduart3)   | 02/05/2025 | [Laryssa Felix](https://github.com/felixlaryssa)|
 
-This is a repository for a Python-to-C compiler built using **Flex** and **Bison**.
-
-## Project Structure
-```
-/G2_compiladores
-├─ /site              # GitHub Pages site
-├─ /docs              # Project documentation
-├─ /src               # Compiler source code
-│   ├─ lexer/         # Lexical analysis (tokenization)
-│   ├─ parser/        # Syntax analysis (parse tree construction)
-│   ├─ outputs/       # Output from tested analyzers
-│   ├─ tests/         # Python code to be tested by the analyzers
-│   ├─ ST/            # Symbol Table for syntax analysis
-│   └─ main.py        # Compiler entry point
-```
-## How to Run the Project
-
-This section will guide you through setting up and running the Python-to-C compiler.
-
-### Prerequisites
-
-Before running the project, make sure you have the following installed:
-
-- Python 3.8+
-
-- Flex (lexical analyzer generator)
-
-- Bison (parser generator)
-
-- GCC or another C compiler
-
-- Make (optional, but helpful)
-
-You can install Flex and Bison via:
-````
-# On Ubuntu/Debian:
-sudo apt update
-sudo apt install flex bison build-essential
-
-# On macOS (using Homebrew):
-brew install flex bison
-````
-### Running the Compiler
-
-To run the compiler manually:
-
-Navigate to the src/ directory:
-```
-cd src
-```
-### How to Run the Tests
-To automatically run all test cases:
-```
-chmod +x run_tests.sh && ./run_tests.sh
-```
-
-This script will:
-
-- Run all Python test files in src/tests/
-- Process them through the compiler
-S- ave the output C code in src/outputs/
+<font size="2">
+  <p style="text-align: center">
+    Fonte: 
+    <a href="https://github.com/caioduart3">Caio Duarte</a>, 
+    <a href="https://github.com/ludmilaaysha">Ludmila Aysha</a>, 
+    <a href="https://github.com/RafaelSchadt">Rafael Welz</a>, 
+    <a href="https://github.com/isaqzin">Isaque Camargos</a>, 
+    <a href="https://github.com/felixlaryssa">Laryssa Felix</a>, 2025.
+  </p>
+</font>
