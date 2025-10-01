@@ -44,6 +44,6 @@ theme:
 
 nav:
   - Apresentação: index.md
-  - Planejamento: Planejamento/planejamento.md
+  # - Planejamento: Planejamento/planejamento.md
   - Escopo: Escopo/escopo.md
   - Dificuldades: Dificuldades/dificuldades.md
