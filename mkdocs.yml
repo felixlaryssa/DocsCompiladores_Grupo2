@@ -49,4 +49,4 @@ nav:
   - Dificuldades: Dificuldades/dificuldades.md
   - Desenvolvimento Técnico:
     - Parser: Desenvolvimento_tecnico/parser.md
-  # - Planejamento: Planejamento/planejamento.md
+    - Lexer: Desenvolvimento_tecnico/lexer.md
